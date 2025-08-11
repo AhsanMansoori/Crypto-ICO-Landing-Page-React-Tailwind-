@@ -1,15 +1,14 @@
-# React + TypeScript + Vite
+# Crypto ICO Landing Page - React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern landing page for a Cryptocurrency ICO built with React, TypeScript, and Vite. The project features a responsive design using Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Modern React with TypeScript
+- Fast development with Vite
+- Responsive design with Tailwind CSS
+- Interactive components
+- Optimized for performance
 
 ```js
 export default tseslint.config({
@@ -52,3 +51,6 @@ export default tseslint.config({
   },
 });
 ```
+=======
+# Crypto-ICO-Landing-Page-React-Tailwind-
+>>>>>>> 965cf6cf9244585edf0cfca5a38a86238391a790
