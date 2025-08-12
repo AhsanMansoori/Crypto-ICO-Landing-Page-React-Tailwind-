@@ -4,21 +4,19 @@ import { viteStaticCopy } from "vite-plugin-static-copy";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-const config = {
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { viteStaticCopy } from "vite-plugin-static-copy";
+import path from "path";
+import tailwindcss from "@tailwindcss/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+
+export default defineConfig({
   base: '/Crypto-ICO-Landing-Page-React-Tailwind-/',
-  mode: "development",
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-    sourcemap: true,
-    minify: false,
-    cssMinify: false,
-    terserOptions: { compress: false, mangle: false },
-  },
-  define: { "process.env.NODE_ENV": "'development'" },
-  esbuild: { jsx: "automatic", jsxImportSource: "react" },
   plugins: [
     react(),
+    tailwindcss(),
+    tsconfigPaths(),
     viteStaticCopy({
       targets: [
         { src: "./assets/*", dest: "assets" },
@@ -29,10 +27,22 @@ const config = {
         { src: "./assets/*", dest: path.join("dist", "assets") },
       ],
       silent: true,
-    }),
+    })
   ],
-  resolve: {},
-};
-config.plugins.push(tailwindcss());
-config.plugins.push(tsconfigPaths());
-export default defineConfig(config);
+  mode: "production",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    sourcemap: false,
+    minify: true,
+    cssMinify: true
+  },
+  define: { 
+    "process.env.NODE_ENV": '"production"'
+  },
+  esbuild: { 
+    jsx: "automatic" as const,
+    jsxImportSource: "react"
+  },
+  resolve: {}
+});
