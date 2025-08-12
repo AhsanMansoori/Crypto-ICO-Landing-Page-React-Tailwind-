@@ -5,6 +5,7 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 const config = {
+  base: '/Crypto-ICO-Landing-Page-React-Tailwind-/',
   mode: "development",
   build: {
     outDir: "dist",
