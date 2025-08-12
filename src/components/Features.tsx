@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Shield, Network, Coins, Globe, Lock } from 'lucide-react';
+import { Zap, Shield, Network, Coins, Globe, Lock } from '../icons';
 
 const Features: React.FC = () => {
   const features = [

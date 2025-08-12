@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, Circle, Clock, Rocket } from 'lucide-react';
+import { CheckCircle, Circle, Clock, Rocket } from '../icons';
 
 const Roadmap: React.FC = () => {
   const roadmapItems = [

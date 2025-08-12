@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Coins } from 'lucide-react';
+import { Menu, X, Coins } from '../icons';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

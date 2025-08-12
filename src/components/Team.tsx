@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter, Github } from 'lucide-react';
+import { Linkedin, Twitter, Github } from '../icons';
 
 const Team: React.FC = () => {
   const teamMembers = [

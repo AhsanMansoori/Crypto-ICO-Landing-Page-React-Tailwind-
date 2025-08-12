@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Coins, Zap, Shield } from 'lucide-react';
+import { ArrowRight, Coins, Zap, Shield } from '../icons';
 
 const Hero: React.FC = () => {
   return (

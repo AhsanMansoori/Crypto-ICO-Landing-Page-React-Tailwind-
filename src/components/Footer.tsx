@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coins, Twitter, Github, Linkedin, Mail, MessageCircle } from 'lucide-react';
+import { Coins, Twitter, Github, Linkedin, Mail, MessageCircle } from '../icons';
 
 const Footer: React.FC = () => {
   const footerLinks = {

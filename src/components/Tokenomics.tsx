@@ -1,5 +1,5 @@
 import React from 'react';
-import { PieChart, TrendingUp, Users, Lock } from 'lucide-react';
+import { PieChart, TrendingUp, Users, Lock } from '../icons';
 
 const Tokenomics: React.FC = () => {
   const tokenData = [
